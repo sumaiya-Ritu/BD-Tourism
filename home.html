@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css" />
+    <title>BD Tourism</title>
+    <style>
+    * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Josefin Sans', sans-serif;
+        }
+        
+        header {
+            width: 100%;
+            height: 100vh;
+            background-image: linear-gradient(to bottom, rgba(235, 236, 240, 0.3), rgba(14, 10, 13, 0.73)), url('images/img6.jpg');
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+        
+        nav {
+            width: 100%;
+            height: 15vh;
+            background: rgba(0, 0, 0, 0.2);
+            color: blanchedalmond;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        
+        nav .logo {
+            width: 25%;
+            text-align: center;
+            /* background-color: red; */
+        }
+        
+        nav .menu {
+            width: 40%;
+            /* background-color: yellowgreen; */
+            display: flex;
+            justify-content: space-around;
+        }
+        
+        nav .menu a {
+            width: 25%;
+            text-decoration: none;
+            color: white;
+            font-weight: bold;
+        }
+        
+        main {
+            width: 100%;
+            height: 85vh;
+            /* background-color: red; */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            color: white;
+        }
+        
+        nav .menu a:hover {
+            color: burlywood;
+        }
+    }
+    section {}
+    section h3 {
+        font-size: 35px;
+        font-weight: 200;
+        letter-spacing: 3px;
+        text-shadow: 2px 1px 2px black;
+    }
+    section h1 {
+        margin: 30px 0 20px 0;
+        font-size: 55px;
+        font-weight: 700;
+        text-shadow: 2px 1px 5px black;
+        text-transform: uppercase;
+    }
+    section p {
+        font-size: 25px;
+        color: #eee;
+        word-spacing: 2px;
+        margin-bottom: 25px;
+        text-shadow: 2px 1px 1px black;
+    }
+    section a {
+        padding: 12px 30px;
+        border-radius: 4px;
+        outline: none;
+        text-transform: uppercase;
+        font-size: 20px;
+        font-weight: 500;
+        text-decoration: none;
+        letter-spacing: 1px;
+        transition: all .5 ease;
+    }
+    section .bt1 {
+        background: white;
+        color: #000;
+    }
+    .bt1:hover {
+        background: rgb(22, 18, 18);
+        color: wheat;
+    }
+    section .bt2 {
+        background-color: rgb(104, 6, 6);
+        color: rgb(245, 235, 235);
+    }
+    .bt2:hover {
+        background: rgb(17, 70, 45);
+        color: #000;
+    }
+    .change_content::after {
+        content: '';
+        animation: changetext 10s infinite linear;
+        color: rgb(104, 6, 6);
+    }
+    @keyframes changetext {
+        0% {
+            content: "SRIMONGOL";
+        }
+        
+        20% {
+            content: "St.MARTIN";
+        }
+        
+        35% {
+            content: "COX'S BAZAR";
+        }
+        
+        50% {
+            content: "SYLHET";
+        }
+        
+        70% {
+            content: "RANGAMATI";
+        }
+        
+        90% {
+            content: "SUNDARBAN";
+        }
+        
+        100% {
+            content: "PATUAKHALI BEACH";
+        }
+    }
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="logo">
+
+                <h1 class="animated infinite bounce">BD Tourism</h1>
+            </div>
+            <div class="menu">
+                <a href="#">HOME</a>
+                <a href="#">SERVICES</a>
+                <a href="#">CONTACT US</a>
+                <a href="#">REVIEWS</a>
+            </div>
+        </nav>
+
+        <main>
+            <section>
+                <h3>Welcome to Bangladesh</h3>
+                <h1>Come and visit <span class="change_content"></span></h1>
+                <p>"One of the beautiful countries of the world,visiting here once is not enough"</p>
+                <a href="#" class="bt1">LOGIN</a>
+                <a href="#" class="bt2">SIGN UP</a>
+            </section>
+        </main>
+
+    </header>
+</body>
+
+</html>
